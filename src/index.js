@@ -53,32 +53,38 @@ class Items extends React.Component {
         return (
             <div>
                 <ul>
-                    <li>
-                        <Item/>
-                    </li>
-                    <li>
-                        <Item/>
-                    </li>
-                    <li>
-                        <Item/>
-                    </li>
-                    <li>
-                        <Item/>
-                    </li>
+                    <Item name="Product 1" desc="Description" price="$10"/>
+                    <Item name="Second Product" desc="Description" price="$20"/>
+                    <Item name="Promo Code" desc="Description" price="-$5"/>
+                    <Item name="Total" price="$25"/>
                 </ul>
             </div>
         );
     }
 }
 
-class Item extends React.Component {
-    render() {
+function Item(props) {
+        const style = {
+            backgroundColor: "white",
+            margin: 5,
+            positon: "relative",
+            display: "flex",
+            alignItems: "flex-start",
+            justifyContent: "space-between",
+            paddingLeft: "15px",
+            paddingRight: "15px",
+        }
         return (
-            <div>
-                Item
-            </div>
+            <li style={style}>
+                <div>
+                    <h2>{props.name}</h2>
+                    <p>{props.desc}</p>
+                </div>
+                <div>
+                    <h2>{props.price}</h2>
+                </div>
+            </li>
         );
-    }
 }
 
 
