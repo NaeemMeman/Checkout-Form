@@ -1,0 +1,16 @@
+.billing {
+    display: block;
+    width: 100%;
+    background-color: red;
+    flex-grow: 1;
+}
+
+li {
+    background-color: white;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid black;
+}

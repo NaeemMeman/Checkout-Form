@@ -1,0 +1,21 @@
+.cart {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+}
+
+li {
+    background-color: white;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid black;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
