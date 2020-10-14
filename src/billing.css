@@ -11,6 +11,6 @@ li {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     border: 1px solid black;
 }

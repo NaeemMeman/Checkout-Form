@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Cart from './cart.js';
 import Billing from './billing.js';
+import Payment from './payment.js';
 
 class Form extends React.Component {
     render() {
@@ -12,24 +13,28 @@ class Form extends React.Component {
                     <Cart/>
                 </div>
                 <form class="column-container">
-                        <Billing/>
-                        <Payment/>
+                    <Billing/>
+                    <ul>
+                        <li>
+                            <label>
+                                Shipping Address is the same as Billing Address.
+                            </label>
+                            <input type="checkbox"/>
+                        </li>
+                    </ul>
+                    <Payment/>
+                    <ul>
+                        <li>
+                            <button type="submit">
+                                Continue to Checkout
+                            </button>
+                        </li>
+                    </ul>
                 </form>
             </div>
         );
     }
 }
-
-class Payment extends React.Component {
-    render() {
-        return (
-            <div>
-                <Billing/>
-            </div>
-        );
-    }
-}
-
 
 ReactDOM.render(
   <Form />,

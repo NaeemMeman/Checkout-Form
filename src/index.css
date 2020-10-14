@@ -8,6 +8,11 @@ form {
     height: 50px;
 }
 
+button {
+    width: 100%;
+    height: 30px;
+}
+
 .form-container {
     display: flex;
     flex-flow: row-reverse wrap;
@@ -17,13 +22,5 @@ form {
 .column-container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-}
-
-.blue {
-    display: block;
-    width: 100%;
-    background-color: blue;
-    flex-grow: 1;
     width: 500px;
 }

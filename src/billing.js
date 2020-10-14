@@ -24,7 +24,7 @@ class Items extends React.Component {
                     <Item id="address" label="Address" placeholder="1234 Main Street"/>
                     <li>
                         <label for="country">
-                            Country
+                            <h2>Country</h2>
                         </label>
                         <select id="country" required>
                             <option value="">
@@ -37,7 +37,7 @@ class Items extends React.Component {
                     </li>
                     <li>
                         <label for="state">
-                            State
+                            <h2>State</h2>
                         </label>
                         <select id="state" required>
                             <option value="">
@@ -58,12 +58,10 @@ class Items extends React.Component {
 function Item(props) {
         return (
             <li>
-                <div>
-                    <label for={props.id}>
-                        {props.label}
-                    </label>
-                    <input type="text" id={props.id} placeholder={props.placeholder} required/>
-                </div>
+                <label for={props.id}>
+                    <h2>{props.label}</h2>
+                </label>
+                <input type="text" id={props.id} placeholder={props.placeholder} required/>
             </li>
         );
 }
