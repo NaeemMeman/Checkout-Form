@@ -24,8 +24,8 @@ class Form extends React.Component {
     
     render() {
         const content=this.state.checked ?
-            <Shipping/>
-            : null;
+            null
+            : <Shipping/>;
         return (
             <div class="form-container">
                 <div class="column-container">

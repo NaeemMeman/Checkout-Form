@@ -753,14 +753,14 @@ class Form extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   }
 
   render() {
-    const content = this.state.checked ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shipping_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    const content = this.state.checked ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shipping_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 13
+        lineNumber: 28,
+        columnNumber: 15
       }
-    }) : null;
+    });
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       class: "form-container",
       __self: this,
